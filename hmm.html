@@ -2,6 +2,7 @@
 <head>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,12 +17,49 @@
     background-repeat: no-repeat;
     background-size: 1500px 300px;
 }
+.a2{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.a3{
+  background-color: red;
+}
 .ac1{
 	margin-right: 32px;
 }
 .ac2{
 	margin-left: 100px;
 	color: white;
+}
+.ac3{ 
+
+  height: 30%;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.ac4{ 
+  float:left;
+  height: 30%;
+  width: 30%;
+  margin: auto;
+  text-align: left;
+}
+.ac5{ 
+  float:right;
+  height: 30%;
+  width: 30%;
+  margin: auto;
+  text-align: right;
+}
+.ac6{
+  height: 10%;
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+.a{
+   font-size: 50px;
 }
 form.example input[type=text] {
     padding: 10px;
@@ -61,19 +99,19 @@ form.example::after {
 
 
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-fixed-top a3">
   <div class="container-fluid ac2" >
     <ul class="nav navbar-nav">
-  <li><a class="ac1" href="#home">HOME</a></li>
-  <li><a class="ac1" href="#travel">TRAVEL</a></li>
-  <li><a class="ac1" href="#music">MUSIC</a></li>
-  <li><a class="ac1" href="#food">FOOD</a></li>
-  <li><a class="ac1" href="#techno">TECHNO</a></li>
-  <li><a class="ac1" href="#diy">DIY</a></li>
-  <li><a class="ac1" href="#dance">DANCE</a></li>
-  <li><a class="ac1" href="#fashion">FASHION</a></li>
-  <li><a class="ac1" href="#health&fitness">HEALTH&FITNESS</a></li>
-  <li><a class="ac1" href="#internship">INTERNSHIP</a></li>
+  <li><a class="ac1" href="#home" tag="HOME" style="color:white;">HOME</a></li>
+  <li><a class="ac1" href="#travel" tag="TRAVEL" style="color:white;">TRAVEL</a></li>
+  <li><a class="ac1" href="#music" tag="MUSIC" style="color:white;">MUSIC</a></li>
+  <li><a class="ac1" href="#food" tag="FOOD" style="color:white;">FOOD</a></li>
+  <li><a class="ac1" href="#techno" tag="TECHNO" style="color:white;">TECHNO</a></li>
+  <li><a class="ac1" href="#diy" tag="DIY" style="color:white;">DIY</a></li>
+  <li><a class="ac1" href="#dance" tag="DANCE" style="color:white;">DANCE</a></li>
+  <li><a class="ac1" href="#fashion" tag="FASHION" style="color:white;">FASHION</a></li>
+  <li><a class="ac1" href="#health&fitness" tag="HEALTH&FITNESS" style="color:white;">HEALTH&FITNESS</a></li>
+  <li><a class="ac1" href="#internship" tag="INTERNSHIP" style="color:white;">INTERNSHIP</a></li>
     </ul>
   </div>
 </nav>
@@ -81,12 +119,216 @@ form.example::after {
 <div id="example2">
 <br>
 <br><h2 class="ac2">huntsends.com</h2>
-</div><br><br><br><br><br>
-<form action="/action_page.php" style="margin:auto;max-width:300px">
-  <input type="text" placeholder="Search.." name="search2">
-  <button type="submit" class="btn btn-link"><i class="fa fa-search"></i></button>
+<div style="margin-bottom: 0px; height:60px; width: 1300px; background-color: white; ">
+</div>
+</div>
+<br><br><br>
+  <div style="float: left;" >
+  <i class="fab fa-github a" ></i><br>
+  <i class="fab fa-facebook a"></i><br>
+  <i class="fab fa-twitter a"></i><br>
+  <i class="fab fa-instagram a"></i><br>
+  <i class="fab fa-tumblr a"></i>
+  </div>
+<!-- -------------------------------------------------------------------------------------------------------------------- -->
+<div class="container">
+  <!-- ----------------------------------------------- -->
+
+<div class="col-sm-4">
+  <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="hmmm.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br><br>
+<div id="myCarousel" class="carousel slide  " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="hmmm.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+ <!-- ----------------------------------------------- -->
+<div class="col-sm-6 ac3" >
+
+  <img style="height: 100px; width: 100px;" src="unnamed.jpg" >
+
+  <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="hmmm.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+   <!-- ----------------------------------------------- -->
+  <div class="col-sm-4">
+    <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="hmmm.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<br><br>
+<div id="myCarousel" class="carousel slide  " data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <img src="hmmm.jpg" alt="Los Angeles">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="Chicago">
+    </div>
+
+    <div class="item">
+      <img src="hmmm.jpg" alt="New York">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+  </div>
+</div>
+<br><br>
+<br>   <!-- ----------------------------------------------- ----------------------------------------------------------------->
+<form action="/action_page.php" >
+  <input  type="text" placeholder="" name="search2" style=" margin-left:400px;width:500px">
+  <button type="button" class="btn btn-danger">search</button>
 </form>
-<br><br><br><br><br>
+</div>
+<div align="center" >=
+  <i class="fab fa-github a2" ></i>=
+  <i class="fab fa-facebook a2"></i>=
+  <i class="fab fa-twitter a2"></i>=
+  <i class="fab fa-instagram a2"></i>=
+  <i class="fab fa-tumblr a2"></i>
+  </div>
+
+<!-- photo add --->
 
 <h2 align="center"><u>HUNTSENDS CHANNEL</u></h2>
 </body>
